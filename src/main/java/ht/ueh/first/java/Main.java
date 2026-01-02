@@ -34,15 +34,14 @@ public class Main {
 
         System.out.println("Solde final: " + sharedAccount.getBalance() + " euro");
 
-       // reponse des questions
+        // reponse des questions
         System.out.println("Quel solde attend-on théoriquement ? reponse: -400 euros");
         System.out.println("Quel solde observez-vous parfois ? reponse: 2) -400 euros ");
         System.out.println("Pourquoi les deux retraits peuvent-ils réussir ? reponse: 3) car par definiton du Thread c'est son role permet d'executer deux taches en parallele o peut dire aussi que le lecteur du solde n'est pa atomique");
         System.out.println("Comment appelle-t-on ce type de problème? reponse: 4) Race condition");
 
-    }
-}
-       /** System.out.println("\n======= Partie 4 —Synchronisation avec synchronized=======");
+
+        System.out.println("\n======= Partie 4 —Synchronisation avec synchronized=======");
 
         BankAccountSynchronized safeAccount = new BankAccountSynchronized(498765, 1000.0);
 
@@ -68,7 +67,9 @@ public class Main {
         System.out.println("parcequ'un seul Thread a la fois peut executer les methodes synchronisee");
         System.out.println("ils sont mis en attente dans une file jusqu'a ce que le verrou soit libere");
 
-        System.out.println("\n Partie 5 - simulation multi-clients");
+    }
+}
+      /**  System.out.println("\n Partie 5 - simulation multi-clients");
 
         BankAccountSynchronized multiAccount = new BankAccountSynchronized(23456, 5000.0);
 
