@@ -10,14 +10,13 @@ public class Main {
         BankAccount account = new BankAccount(123456, 1000.0);
         System.out.println("solde initial: " + account.getBalance() + "euro");
 
-        account.deposit ( 200 );
-        account.Withdraw ( 150 );
+        account.deposit(200);
+        account.Withdraw(150);
 
         System.out.println("solde final : " + account.getBalance() + "euro");
 
-    }
-}
-       /** System.out.println("\n Partie 3 — Mise en évidence d’une Race Condition ");
+
+        System.out.println("\n Partie 3 — Mise en évidence d’une Race Condition ");
 
         BankAccount sharedAccount = new BankAccount(234567, 1000);
 
@@ -35,14 +34,15 @@ public class Main {
 
         System.out.println("Solde final: " + sharedAccount.getBalance() + " euro");
 
-        //reponse des questions
+       // reponse des questions
         System.out.println("Quel solde attend-on théoriquement ? reponse: -400 euros");
         System.out.println("Quel solde observez-vous parfois ? reponse: 2) -400 euros ");
         System.out.println("Pourquoi les deux retraits peuvent-ils réussir ? reponse: 3) car par definiton du Thread c'est son role permet d'executer deux taches en parallele o peut dire aussi que le lecteur du solde n'est pa atomique");
         System.out.println("Comment appelle-t-on ce type de problème? reponse: 4) Race condition");
 
-
-        System.out.println("\n======= Partie 4 —Synchronisation avec synchronized=======");
+    }
+}
+       /** System.out.println("\n======= Partie 4 —Synchronisation avec synchronized=======");
 
         BankAccountSynchronized safeAccount = new BankAccountSynchronized(498765, 1000.0);
 
